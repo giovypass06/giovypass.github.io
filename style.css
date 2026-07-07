@@ -210,10 +210,20 @@ header {
 
 /* Responsive - Adattamento per schermi piccoli (cellulari) */
 @media (max-width: 768px) {
-    /* Diminuiamo la grandezza del font a 1.8rem e lo spazio tra le lettere */
+    /* Riduciamo il padding laterale dell'header da 2rem a 1rem */
+    header {
+        padding: 4rem 1rem; 
+    }
+
+    /* Usiamo 'vw' in modo che il testo scali in percentuale rispetto allo schermo */
     h1 { 
-        font-size: 1.6rem; 
+        font-size: 9vw; 
         letter-spacing: 0px; 
+        word-wrap: break-word; /* Sicurezza extra: se proprio non entra, spezza la parola invece di sbordare */
+    }
+    
+    h2 {
+        font-size: 1.2rem;
     }
     
     .grid { 
