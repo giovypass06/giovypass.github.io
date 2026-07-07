@@ -243,3 +243,12 @@ header {
         justify-content: center;
     }
 }
+
+/* Gestione delle parole lunghe (utile specialmente per il tedesco) */
+.card h4, .card p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
