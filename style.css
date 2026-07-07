@@ -207,3 +207,29 @@ header {
         justify-content: center;
     }
 }
+
+/* Responsive - Adattamento per schermi piccoli (cellulari) */
+@media (max-width: 768px) {
+    /* Diminuiamo la grandezza del font a 1.8rem e lo spazio tra le lettere */
+    h1 { 
+        font-size: 1.8rem; 
+        letter-spacing: 0px; 
+    }
+    
+    .grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .contact-info { 
+        flex-direction: column; 
+        gap: 1rem; 
+        text-align: center; 
+    }
+    
+    .lang-selector {
+        position: static; 
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}
